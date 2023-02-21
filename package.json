@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "rollup -wc rollup.config.dev.js",
     "build": "rollup -c rollup.config.dev.js"
-
   },
   "keywords": [],
   "author": "Louis <2321_louis@163.com>",
@@ -18,7 +17,5 @@
     "rollup": "^3.17.2",
     "rollup-plugin-node-resolve": "^5.2.0"
   },
-  "dependencies": {
-    "sam-test-data": "0.0.5"
-  }
+  "dependencies": {}
 }
