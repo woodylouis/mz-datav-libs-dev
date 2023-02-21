@@ -1,0 +1,15 @@
+{
+  "name": "mz-datav-libs-dev",
+  "version": "1.0.0",
+  "description": "mz datav components library",
+  "main": "index.js",
+  "scripts": {
+    "dev": "rollup -wc rollup.config.dev.js"
+  },
+  "keywords": [],
+  "author": "Louis <2321_louis@163.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "rollup": "^3.17.2"
+  }
+}
