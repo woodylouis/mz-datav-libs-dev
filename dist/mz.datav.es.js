@@ -1,5 +1,7 @@
-console.log('hello mz datav!');
+import { random, a, b } from 'sam-test-data';
+export { random as default } from 'sam-test-data';
 
-var index = {};
+//common js写法
 
-export { index as default };
+
+console.log(random(100), a, b );
