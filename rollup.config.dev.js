@@ -1,13 +1,20 @@
 const path = require('path')
 
 const inputPath = path.resolve(__dirname, './src/index.js')
-const outputPath = path.resolve(__dirname, './dist/mz.datav.js')
-
+const outputUmdPath = path.resolve(__dirname, './dist/mz.datav.js')
+const outputEsPath = path.resolve(__dirname, './dist/mz.datav.es.js')
 module.exports = {
   input: inputPath,
-  output: {
-    file: outputPath,
-    format: "umd",
-    name: 'mzDatav'
-  }
+  output: [
+    {
+      file: outputUmdPath,
+      format: "umd",
+      name: 'mzDatav'
+    }, 
+    {
+      file: outputEsPath,
+      format: "es",
+      name: 'mzDatav'
+      },   
+  ]
 }
