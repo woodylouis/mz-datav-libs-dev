@@ -1,5 +1,5 @@
-import { random, a, b } from './plugin'
+const b = () => {
+  return 3
+}
 
-console.log(random(), a)
-
-export default random
+export default b;

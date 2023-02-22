@@ -15,7 +15,11 @@
     "@babel/preset-env": "^7.20.2",
     "core-js": "^3.28.0",
     "rollup": "^3.17.2",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "sam-test-data": "0.0.5"
+  }
 }
