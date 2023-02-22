@@ -2,6 +2,7 @@ const path = require('path')
 const resolve = require('rollup-plugin-node-resolve')
 const commonjs = require('rollup-plugin-commonjs')
 const babel = require('rollup-plugin-babel')
+const json = require('rollup-plugin-json')
 const inputPath = path.resolve(__dirname, './src/index.js')
 const outputUmdPath = path.resolve(__dirname, './dist/mz.datav.js')
 const outputEsPath = path.resolve(__dirname, './dist/mz.datav.es.js')
@@ -24,7 +25,8 @@ module.exports = {
     commonjs(),
     babel({
       exclude: 'node_modules/**'
-    })
+    }),
+    json()
   ],
   external: [
     'sam-test-data'
