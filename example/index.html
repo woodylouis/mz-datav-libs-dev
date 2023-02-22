@@ -2,10 +2,23 @@
 <html>
   <head>
     <title>mz datav libs example</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="../dist/mz.datav.js"></script>
   </head>
   <body>
-
+    <div id="app"> {{ message }}
+      <test-component></test-component>
+    </div>
+    <script>
+      Vue.createApp({
+        setup() {
+          var message = 'hello mz!'
+          return {
+            message
+          }
+        }
+      }).use(mzDatav).mount('#app')
+    </script>
   </body>
 
 </html>

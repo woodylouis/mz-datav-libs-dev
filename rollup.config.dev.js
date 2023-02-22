@@ -14,12 +14,18 @@ module.exports = {
     {
       file: outputUmdPath,
       format: "umd",
-      name: 'mzDatav'
+      name: 'mzDatav',
+      globals: {
+        vue: 'Vue'
+      }
     }, 
     {
       file: outputEsPath,
       format: "es",
-      name: 'mzDatav'
+      name: 'mzDatav',
+      globals: {
+        vue: 'Vue'
+      }
     },   
   ],
   plugins: [
